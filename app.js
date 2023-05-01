@@ -12,6 +12,7 @@ const Parser = require('web-tree-sitter');
     const tree = parser.parse(eventRule);
     const rootNode = tree.rootNode;
     console.log(rootNode.toString());
+    
     const eventSource = eventRuleJson.source[0];
     const detailType = eventRuleJson['detail-type'][0];
     const eventNameDetail = eventRuleJson.detail.eventName[0];
